@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TFJam</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            #CONTAINER {
+                width: 800px;
+                height: 600px;
+                background: #A7DBD8;
+            }
+            #RENDER {
+                position: relative;
+                z-index: 1;
+            }
+            #INFO {
+                position: absolute;
+                top: 200px;
+                left: 0;
+                width: 800px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 50px;
+                color: #3B8686;
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="CONTAINER">
+            <div id="INFO"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/1.1.2/tf.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
